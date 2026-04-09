@@ -1,11 +1,218 @@
-.navigation_button {
-    background-color: #1c87c9;
-    border: 1px solid #000;
+body {
+    background: #80829A;
+    background: linear-gradient(0deg,rgba(128, 130, 154, 1) 0%, rgba(231, 232, 244, 1) 50%, rgba(255, 255, 255, 1) 100%);
+    font-size: 20px;
+    font: 400 1.5em/1.5 "Koh Santepheap", serif;
+}
+
+.navButton {
+    background-color: #0B030D;
+    border: 1px double #604F65;
     color: white;
     padding: 20px 34px;
     text-align: center;
     display: inline-block;
+    text-decoration: none;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+}
+
+.center-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+/*Navigation Bar for the top of the page*/
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    top: 0;
+    color: #fff;
+    background-color: #171019;
+}
+
+.navbar div {
+    font-size: 20px;
+    padding: 10px;
+}
+
+/*Flexbox for the "buttons" of the navigation bar*/
+.navbar_boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-self: flex-end | center;
+    width: 100%;
+}
+
+.navbar_boxhead {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.navbar_boxhead:hover {
+    color: #1c87c9;
+}
+
+.infobar_boxhead {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.infobar_boxhead:hover {
+    color: #1c87c9;
+}
+
+.navbar_boxhead:hover {
+    color: #1c87c9;
+}
+
+/*Horizontal Flexboxes*/
+.displaybox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    border-radius: 25px;
+    width: 100%;
+    background-color: #171019;
+    overflow: hidden;
+}
+
+.displaybox div {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding: 20px;
+    color: #fff;
+    max-width: 375px;
+}
+
+/*Vertical Flexboxes*/
+.displaybox_vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    width: 100%;
+}
+
+/*Image Hover Effects*/
+.imgBox {
+    text-decoration: none;
+    color: #fff;
+}
+
+.imgBox img {
+    width: 100%;
+    transition: 1s ease;
+}
+
+.imgBox img:hover {
+    transform: scale(1.1);
+}
+
+.imgBox:hover {
+    color: #1c87c9;
+}
+
+/*Info Bar at the bottom of the page*/
+.infosection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    top: 0;
+    color: #fff;
+    background-color: #171019;
+}
+
+.infosection div {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding: 10px;
+}
+
+* {box-sizing: border-box;}
+
+/* Slideshow container */
+.slideshow-container {
+    width: fit-content;
+    height: auto;
+    max-height: 90%;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/*Imported Font*/
+.koh-santepheap-thin {
+    font-family: "Koh Santepheap", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.koh-santepheap-light {
+    font-family: "Koh Santepheap", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.koh-santepheap-regular {
+    font-family: "Koh Santepheap", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.koh-santepheap-bold {
+    font-family: "Koh Santepheap", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.koh-santepheap-black {
+    font-family: "Koh Santepheap", serif;
+    font-weight: 900;
+    font-style: normal;
 }

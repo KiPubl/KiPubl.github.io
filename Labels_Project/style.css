@@ -89,3 +89,18 @@ body {
     padding: 5px;
     text-align: center;
 }
+
+.return-button {
+    height: 25px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #000000;
+    border: none;
+}
+
+.return-button:hover {
+    color: #1c87c9;
+}

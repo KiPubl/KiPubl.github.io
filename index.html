@@ -1,15 +1,184 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link href="style2.css" rel="stylesheet">
-    </head>
 
-    <body>
-        <h1>Landing Page</h1>
-        <p><u>Labels/Kiosks Project for MUSE-608:</u></p>
-        <a class="navigation_button" href="Labels_Project/beholder-label.html">Beholder Label</a>
-        <a class="navigation_button" href="Labels_Project/gazer-label.html">Gazer Label</a>
-        <a class="navigation_button" href="Labels_Project/dragon-label.html">Dragon Label</a>
-        <a class="navigation_button" href="Labels_Project/dragon_egg-label.html">Dragon Egg Label</a>
-    </body>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@100;300;400;700;900&display=swap"
+        rel="stylesheet">
+    <link href="style2.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <div>
+            <a href="index.html">
+                <img src="img_icons/CotFR_Logo-White.svg" alt="Critters of the Forgotten Realms Logo" width="auto"
+                    height="100px" ;>
+            </a>
+        </div>
+        <div>
+            <h1>Critters of the Forgotten Realms</h1>
+        </div>
+        <div>
+            <p><a href="#" class="navbar_boxhead">DONATE</a></p>
+        </div>
+        <div class="navbar_boxes">
+            <p><a href="index.html" class="navbar_boxhead">Home</a></p>
+            <p><a href="visit.html" class="navbar_boxhead">Visit</a></p>
+            <p><a href="discover.html" class="navbar_boxhead">Discover</a></p>
+            <p><a href="education.html" class="navbar_boxhead">Education Resources</a></p>
+            <p><a href="support.html" class="navbar_boxhead">Support the Museum</a></p>
+            <p><a href="about_us.html" class="navbar_boxhead">About Us</a></p>
+        </div>
+    </div>
+    
+    <!--Autoplay Slideshow-->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="Labels_Project/img/Chromatic-Dragons.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="img_icons/2024-MM-cover.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="Labels_Project/img/underdark-art.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="Labels_Project/img/dnd_dalelands_maihope_art.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="Labels_Project/img/white-dragon-ref-sheet.jpg" style="width:100%">
+        </div>
+    </div>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+    <script src="slideshow.js"></script>
+
+    <br>
+
+    <!--Main Body-->
+    <div style="padding-left: 5%; padding-right: 5%;">
+        <!--Discover Featured Critters Flexbox-->
+        <div class="displaybox">
+            <div style="align-self: flex-start;">
+                <h1 style="font-size: 30px;">Discover some of our featured critters!</h1>
+            </div>
+            <div>
+                <a href="Labels_Project/beholder-label.html" class="imgBox">
+                    <img src="img_icons/Beholder_Icon.webp" style="border-radius: 20px; width: 300px; height:auto;"
+                        alt="Beholder">
+                    <p style="font-size: 24px; text-align: center;"><b>Beholder</b></p>
+                </a>
+            </div>
+            <div>
+                <a href="Labels_Project/gazer-label.html" class="imgBox">
+                    <img src="img_icons/Gazer-Icon.jpg" style="border-radius: 20px; width: 300px; height:auto;"
+                        alt="Gazer">
+                    <p style="font-size: 24px; text-align: center;"><b>Gazer</b></p>
+                </a>
+            </div>
+            <div>
+                <a href="Labels_Project/dragon-label.html" class="imgBox">
+                    <img src="img_icons/Adult_Green_Dragon_Icon.webp"
+                        style="border-radius: 20px; width: 300px; height:auto;" alt="Adult Green Dragon">
+                    <p style="font-size: 24px; text-align: center;"><b>Green Dragon</b></p>
+                </a>
+            </div>
+            <div>
+                <a href="Labels_Project/dragon_egg-label.html" class="imgBox">
+                    <img src="img_icons/Dragon_Egg_Icon.jpg" style="border-radius: 20px; width: 300px; height:auto;"
+                        alt="Dragon Egg">
+                    <p style="font-size: 24px; text-align: center;"><b>Dragon Egg</b></p>
+                </a>
+            </div>
+        </div>
+        <br>
+        <!--Mission Display-->
+        <div class="displaybox" style="justify-content: space-around;">
+            <div>
+                <img src="Labels_Project/img/cullen_cole-bastionsinterior.jpg" style="border-radius: 25px; width:auto; height: 400px;">
+            </div>
+            <div>
+                <h1 style="font-size: 24px;">Critters of the Forgotten Realms aims to inspire understanding and respect for all creatures, from the mundane to the magical.</h1>
+                <br>
+                <a href="about_us.html" class="infobar_boxhead">> Learn more about our mission and values</a>
+            </div>
+        </div>
+        <br>
+        <div class="displaybox">
+            <div class="imgBox">
+                <div class="displaybox_vertical" style="text-align: center;">
+                    <img src="img_icons/dnd_planning_Icon.jpg"
+                        alt="Featuring an elven female adventurer with a map, with two other human adventurers in the background."
+                        style="width: 375px; height: auto; border-radius: 20px;">
+                    <p style="font-size: 24px;"><b>Daily Tours</b></p>
+                    <p>Join our docents and storytellers for guided tours of our collection and special exhibitions.</p>
+                </div>
+            </div>
+            <div class="imgBox">
+                <div class="displaybox_vertical" style="text-align: center;">
+                    <img src="img_icons/tockworths-clockworks-Icon.jpg"
+                        alt="A mechanical building featuring a large clock looms in the distance of a small village consisting of rounded roofs."
+                        style="width: 375px; height: auto; border-radius: 20px;">
+                    <p style="font-size: 24px;"><b>Special Events</b></p>
+                    <p>Check out what upcoming events we have in store for adventurers of all ages.</p>
+                </div>
+            </div>
+            <div class="imgBox">
+                <div class="displaybox_vertical" style="text-align: center;">
+                    <img src="img_icons/heist-Icon.jpg"
+                        alt="Two humanoid figures are seen descending down from a skylight. A quasit familiar appears to be taking shelter under a wooden end table, featured in the foreground of the image."
+                        style="width: 375px; height: auto; border-radius: 20px;">
+                    <p style="font-size: 24px;"><b>Mobile Guide</b></p>
+                    <p>Download our mobile app for a variety of self-guided audio tours of our museum's collection and
+                        special exhibitions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!--Infobar at the bottom of the page-->
+    <div class="infosection">
+        <div>
+            <p><b>LOCATION</b></p>
+            <p>Critters of the Forgotten Realms</p>
+            <p>123 Fantasy Lane</p>
+            <p>Trollskull Alley, Waterdeep 45678</p>
+            <p>Phone: (123) 456-7890</p>
+            <a href="#" class="infobar_boxhead">Directions</a>
+        </div>
+        <div>
+            <p><b>HOURS</b></p>
+            <p>Thursday: 1pm - 8pm</p>
+            <p>Friday - Tuesday: 9am - 5pm</p>
+            <p>Wednesday: Closed</p>
+            <a href="visit.html" class="infobar_boxhead">Ticket Information</a>
+        </div>
+        <div>
+            <p><b>EXPLORE</b></p>
+            <p><a href="#" class="infobar_boxhead">Visit</a></p>
+            <p><a href="#" class="infobar_boxhead">Exhibitions</a></p>
+            <p><a href="#" class="infobar_boxhead">Education</a></p>
+            <p><a href="#" class="infobar_boxhead">Support the Museum</a></p>
+        </div>
+        <div>
+            <p><b>ABOUT</b></p>
+            <p><a href="about_us.html" class="infobar_boxhead">About the Museum</a></p>
+            <p><a href="#" class="infobar_boxhead">Staff</a></p>
+            <p><a href="#" class="infobar_boxhead">Press</a></p>
+            <p><a href="#" class="infobar_boxhead">Careers</a></p>
+            <p><a href="#" class="infobar_boxhead">Contact Us</a></p>
+            <p><a href="#" class="infobar_boxhead">Rent the Museum</a></p>
+        </div>
+    </div>
+</body>
+
 </html>

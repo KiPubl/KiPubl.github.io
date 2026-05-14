@@ -97,6 +97,15 @@ body {
     max-width: 375px;
 }
 
+/*Display for Stories*/
+.displaybox_stories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    gap: 20px;
+}
+
 /*Vertical Flexboxes*/
 .displaybox_vertical {
     display: flex;
